@@ -169,6 +169,7 @@ main {
     padding: 26px 32px 0;
     width: 100%;
     height: auto;
+    margin-top: 64px;
 }
 main .name p {
     font-size: 0.9rem;
