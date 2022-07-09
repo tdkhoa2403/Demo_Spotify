@@ -1,0 +1,675 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper .aside__nav {
+    width: 241px;
+    height: 100vh;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* Brand */
+.aside__nav .brand {
+    width: 100%;
+    height: 47px;
+    padding: 0 24px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.brand .brand__icon i {
+    font-size: 2.5rem;
+}
+.brand .brand__name p {
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+
+/* Controls */
+.controls {
+    padding: 0 24px;
+}
+
+/* Default */
+.control__default {
+    margin-bottom: 32px;
+}
+.controls .control__default > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.controls .control__default  i {
+    font-size: 1.4rem;
+    margin-right: 15px;
+}
+.search .search__icon i {
+    margin-right: 16px;
+}
+.library .library__icon {
+    fill: currentcolor;
+}
+.library .library__icon svg {
+    margin-right: 14px;
+}
+
+/* List */
+.controls .control__list > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.control__list .create__list  i {
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+.control__list .liked__songs .box__heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+
+/* Header */
+content {
+    width: calc(100% - 241px);
+    height: auto;
+    background: #151515;
+    color: #a7a7a7;;
+}
+header {
+    width: calc(100% - 241px);
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+content header .header__nav {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    padding-left: 18px;
+
+}
+.header__nav .nav__arrow {
+    width: 50%;
+}
+.arrow--left, .arrow--right {
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    background-color: rgba(0,0,0,.7);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 12px;
+}
+
+.header__nav .nav__tools {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+}
+.nav__tools .controls ul {
+    display: flex;
+    list-style: none;
+}
+.nav__tools .controls ul li {
+    margin-right: 40px;
+}
+.nav__tools .controls ul li:last-child {
+    margin-right: 0;
+}
+.nav__tools a {
+    text-decoration: none;
+    color: #a7a7a7;
+}
+.ruler {
+    background: #fff;
+    height: 25px;
+    margin-right: 21px;
+    margin-left: 5px;
+    width: 1px;
+}
+.nav__tools .signIn input {
+    background-color: #fff;
+    font-size: 1.1rem;
+    color: #000;
+    width: 112px;
+    height: 53px;
+    border-radius: 50px;
+    margin-left: 30px;
+}
+
+
+/* Main */
+main {
+    padding: 26px 32px 0;
+    width: 100%;
+    height: auto;
+}
+main .name p {
+    font-size: 0.9rem;
+    margin-top: 7px;
+}
+
+/* Music */
+main .main__music {
+    margin-bottom: 40px;
+}
+main .main__music .main__music.title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main__music .main__music.title .name a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .main__music .main__music.title .more span {
+    font-size: 0.75rem;
+    color: #b3b3b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+main .main__music .main__music.list {
+    display: flex;
+    align-items: center;
+}
+.main__music .main__music.list > div {
+    width: 185px;
+    height: 263px;
+    background: #1a1919;
+    padding: 16px;
+    position: relative;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.main__music.list div:last-child {
+    margin-right: 0;
+}
+
+.music img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.music .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+}
+.music .content p {
+    font-size: 0.89rem;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+.music.music__2 .title, .music.music__5 .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Charts */
+main .main__charts {
+    margin-bottom: 40px       ;
+}
+main .main__charts .main__charts.title {
+    margin-bottom: 22px;
+}
+main .main__charts .main__charts.title .name h2 {
+    font-size: 1.35rem;
+    color: #fff;
+    font-weight: bold;
+}
+main .main__charts .main__charts.list {
+    display: flex;
+    align-items: center;
+}
+.main__charts .main__charts.list > div {
+    width: 185px;
+    height: 263px;
+    background: #1a1919;
+    padding: 16px;
+    position: relative;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.main__charts.list div:last-child {
+    margin-right: 0;
+}
+
+.charts img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.charts .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+}
+.charts .content p {
+    font-size: 0.89rem;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+
+/* Focus */
+main .main__focus {
+    margin-bottom: 40px;
+}
+main .main__focus .main__focus.title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main__focus .main__focus.title .name a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .main__focus .main__focus.title .more span {
+    font-size: 0.75rem;
+    color: #b3b3b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+main .main__focus .main__focus.list {
+    display: flex;
+    align-items: center;
+}
+.main__focus .main__focus.list > div {
+    width: 185px;
+    height: 263px;
+    background: #1a1919;
+    padding: 16px;
+    position: relative;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.main__focus.list div:last-child {
+    margin-right: 0;
+}
+
+.focus img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.focus .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+}
+.focus .content p {
+    font-size: 0.89rem;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+.focus.focus__2 .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Mood */
+main .main__mood {
+    margin-bottom: 40px;
+}
+main .main__mood .main__mood.title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main__mood .main__mood.title .name a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .main__mood .main__mood.title .more span {
+    font-size: 0.75rem;
+    color: #b3b3b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+main .main__mood .main__mood.list {
+    display: flex;
+    align-items: center;
+}
+.main__mood .main__mood.list > div {
+    width: 185px;
+    height: 263px;
+    background: #1a1919;
+    padding: 16px;
+    position: relative;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.main__mood.list div:last-child {
+    margin-right: 0;
+}
+
+.mood img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.mood .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+}
+.mood .content p {
+    font-size: 0.89rem;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+.mood.mood__2 .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Popular new releases */
+main .main__pop {
+    margin-bottom: 40px;
+}
+main .main__pop .main__pop.title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main__pop .main__pop.title .name a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .main__pop .main__pop.title .more span {
+    font-size: 0.75rem;
+    color: #b3b3b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+main .main__pop .main__pop.list {
+    display: flex;
+    align-items: center;
+}
+.main__pop .main__pop.list > div {
+    width: 185px;
+    height: 263px;
+    background: #1a1919;
+    padding: 16px;
+    position: relative;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.main__pop.list div:last-child {
+    margin-right: 0;
+}
+
+.pop img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.pop .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+}
+.pop .content p {
+    font-size: 0.89rem;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+.pop.pop__1 .title, .pop.pop__3 .title, .pop.pop__5 .title, .pop.pop__6 .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Thời gian cho gia đình và bản thân */
+main .music__forYou {
+    margin-bottom: 40px;
+}
+main .music__forYou .music__forYou.title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .music__forYou .music__forYou.title .name a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .music__forYou .music__forYou.title .more span {
+    font-size: 0.75rem;
+    color: #b3b3b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+main .music__forYou .music__forYou.list {
+    display: flex;
+    align-items: center;
+}
+.music__forYou .music__forYou.list > div {
+    width: 185px;
+    height: 263px;
+    background: #1a1919;
+    padding: 16px;
+    position: relative;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.music__forYou.list div:last-child {
+    margin-right: 0;
+}
+
+.forYou img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.forYou .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+}
+.forYou .content p {
+    font-size: 0.89rem;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+.forYou.music__5 .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Soundtrack your home */
+main .soundtrack {
+    margin-bottom: 40px;
+}
+main .soundtrack .soundtrack.title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .soundtrack .soundtrack.title .name a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .soundtrack .soundtrack.title .more span {
+    font-size: 0.75rem;
+    color: #b3b3b3;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+main .soundtrack .soundtrack.list {
+    display: flex;
+    align-items: center;
+}
+.soundtrack .soundtrack.list > div {
+    width: 185px;
+    height: 263px;
+    background: #1a1919;
+    padding: 16px;
+    position: relative;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.soundtrack.list div:last-child {
+    margin-right: 0;
+}
+
+.soundtrack img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.soundtrack .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+}
+.soundtrack .content p {
+    font-size: 0.89rem;
+    width: 100%;
+    height: 50px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+.soundtrack.track__1 .title, .soundtrack.track__4 .title, .soundtrack.track__6 .title {
+    margin: 18px 0 6px;
+    font-weight: 550;
+    color: #fff;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* footer */
+hr {
+    height: 1px;
+    margin-bottom: 145px;
+    border: none;
+    background-color: #423e3e;
+}
+.footer__signUp {
+    width: calc(100% - 241px);
+    height: auto;
+    background: linear-gradient(90deg,#af2896,#509bf5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 24px 7px 15px;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+}
+button.btn {
+    position: relative;
+    background-color: #fff;
+    font-size: 1.1rem;
+    color: #000;
+    border-radius: 500px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-weight: 550;
+}

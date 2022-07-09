@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./Access/style.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Aside -->
+        <aside class="aside__nav">
+            <div class="brand">
+                <div class="brand__icon">
+                    <i class="fa-brands fa-spotify"></i>
+                </div>
+                <div class="brand__name">
+                    <p>Spotify</p>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <div class="control__default">
+                    <!-- Home -->
+                    <div class="home">
+                        <div class="home__icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="home__name">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                    <!-- Search -->
+                    <div class="search">
+                        <div class="search__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="search__name">
+                            <p>Search</p>
+                        </div>
+                    </div>
+                    <!-- Library -->
+                    <div class="library">
+                        <div class="library__icon">
+                            <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl collection-icon" viewBox="0 0 24 24">
+                                <path d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path>
+                            </svg>
+                        </div>
+                        <div class="library__name">
+                            <p>Your Library</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls list -->
+                <div class="control__list">
+                    <div class="create__list">
+                        <div class="icon">
+                            <i class="fa-solid fa-square-plus"></i>
+                        </div>
+                        <div class="name">
+                            <p>Create Playlist</p>
+                        </div>
+                    </div>
+                    <div class="liked__songs">
+                        <div class="icon">
+                            <div class="box__heart" style="width: 25px; height: 25px; background: linear-gradient(120deg, blue, aqua);">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="name">
+                            <p>Liked Songs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <content>
+            <header>
+                <nav class="header__nav">
+                    <div class="nav__arrow">
+                        <div class="arrow--left">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="arrow--right">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="nav__tools">
+                        <div class="controls">
+                            <ul>
+                                <li><a href="#">Premium</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Download</a></li>
+                            </ul>
+                        </div>
+                        <div class="ruler"></div>
+                        <div class="signIn">
+                            <a href="#">Sign up</a>
+                            <input type="button" value="Log in">
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+
+                <!-- Music -->
+                <section class="main__music">
+                    <div class="main__music title">
+                        <div class="name">
+                            <h2><a href="#">Lựa chọn của Spotify</a></h2>
+                        </div>
+                        <div class="more">
+                            <span>SEE ALL</span>
+                        </div>
+                    </div>
+                    <div class="main__music list">
+                        <div class="music music__1">
+                            <div class="music__1 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000022efa2fb74afc959e922b4ea3" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__1 content">
+                                <div class="title">
+                                    <span>EQUAL Vietnam</span>
+                                </div>
+                                <div class="content">
+                                    <p>Cùng tôn vinh tài năng <br> và âm nhạc của những nữ nghệ sĩ Việt. Ảnh bìa: Phương Ly</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music music__2">
+                            <div class="music__2 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000028726331249fba2c14ff6cfd4" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__2 content">
+                                <div class="title">
+                                    <span>New Music Friday Vietnam</span>
+                                </div>
+                                <div class="content">
+                                    <p>Những chiếc nhạc mới<br> trong tuần, được tuyển chọn cẩn thận</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music music__3">
+                            <div class="music__3 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002abf162e2c5f16b35e6fe6dc1" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__3 content">
+                                <div class="title">
+                                    <span>EQUAL Global</span>
+                                </div>
+                                <div class="content">
+                                    <p>Listen to women from<br> all over the world, at full volume. Cover: Simi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music music__4">
+                            <div class="music__4 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000026c79f1aeaaa2089db3776e9d" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__4 content">
+                                <div class="title">
+                                    <span>EQUAL Korea</span>
+                                </div>
+                                <div class="content">
+                                    <p>한국 여성들의 목소리가<br> 담긴 플레이리스트를 감상해보세요. (커버: fromis_9(프로미스나인))</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music music__5">
+                            <div class="music__5 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000211454569fd4ff378b24d6beb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__5 content">
+                                <div class="title">
+                                    <span>Lofi Chill Để Thư Giãn</span>
+                                </div>
+                                <div class="content">
+                                    <p>Mấy bài này chill phết</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music music__6">
+                            <div class="music__6 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002179209abe53816a03a9be111" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__6 content">
+                                <div class="title">
+                                    <span>Thiên Hạ Nghe Gì</span>
+                                </div>
+                                <div class="content">
+                                    <p>Những gì mà người<br> bên cạnh bạn đang nghe. Ảnh bìa: Sơn Tùng M-TP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts -->
+                <section class="main__charts">
+                    <div class="main__charts title">
+                        <div class="name">
+                            <h2>Charts</h2>
+                        </div>
+                    </div>
+                    <div class="main__charts list">
+                        <div class="charts chart__1">
+                            <div class="chart__1 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_vn_default.jpg" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="chart__1 content">
+                                <div class="title">
+                                    <span>Top 50 - Vietnam</span>
+                                </div>
+                                <div class="content">
+                                    <p>Your daily update of the<br> most played tracks right now - Vietnam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="charts chart__2">
+                            <div class="chart__2 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="chart__2 content">
+                                <div class="title">
+                                    <span>Top 50 - Global</span>
+                                </div>
+                                <div class="content">
+                                    <p>Your daily update of the<br> most played tracks right now - Global.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="charts chart__3">
+                            <div class="chart__3 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002c61f44e81529d986f2b3526d" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="chart__3 content">
+                                <div class="title">
+                                    <span>Hot Hits Vietnam</span>
+                                </div>
+                                <div class="content">
+                                    <p>Đông tới Tây, đây là<br> những ca khúc thịnh hành nhất ở Việt Nam. Ảnh bìa: Miu Lê</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Focus -->
+                <section class="main__focus">
+                    <div class="main__focus title">
+                        <div class="name">
+                            <h2><a href="#">Focus</a></h2>
+                            <p>Music to help you concentrate.</p>
+                        </div>
+                        <div class="more">
+                            <span>SEE ALL</span>
+                        </div>
+                    </div>
+                    <div class="main__focus list">
+                        <div class="focus focus__1">
+                            <div class="focus__1 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="focus__1 content">
+                                <div class="title">
+                                    <span>Peaceful Piano</span>
+                                </div>
+                                <div class="content">
+                                    <p>Relax and indulge with<br> beautiful piano pieces</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus focus__2">
+                            <div class="focus__2 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000023466e2ac76e504f4131af598" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="focus__2 content">
+                                <div class="title">
+                                    <span>Music For Concentration</span>
+                                </div>
+                                <div class="content">
+                                    <p>Minimalism, electronica<br> and modern classical to concentrate to.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus focus__3">
+                            <div class="focus__3 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000218e20d8d2bc7aa007d305e57" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="focus__3 content">
+                                <div class="title">
+                                    <span>Intense Studying</span>
+                                </div>
+                                <div class="content">
+                                    <p>Focus-enhancing piano<br> for your study session.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus focus__4">
+                            <div class="focus__4 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000024a46a7f4e55bbc386dc77f84" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="focus__4 content">
+                                <div class="title">
+                                    <span>Rain Sounds</span>
+                                </div>
+                                <div class="content">
+                                    <p>Simply rain</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus focus__5">
+                            <div class="focus__5 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="focus__5 content">
+                                <div class="title">
+                                    <span>lofi beats</span>
+                                </div>
+                                <div class="content">
+                                    <p>Let yourself be<br> sunkissed with beats to chill, relax, study, code, and focus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus focus__6">
+                            <div class="focus__6 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002dfd8b99086f2c703cc76a1f1" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="focus__6 content">
+                                <div class="title">
+                                    <span>Coffee and Piano</span>
+                                </div>
+                                <div class="content">
+                                    <p>Soft (the quietest of<br> them all), subtle, no words needed. Take a sip and enjoy the music of composers from around the world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Mood -->
+                <section class="main__mood">
+                    <div class="main__mood title">
+                        <div class="name">
+                            <h2><a href="#">Mood</a></h2>
+                            <p>Playlists to match your mood.</p>
+                        </div>
+                        <div class="more">
+                            <span>SEE ALL</span>
+                        </div>
+                    </div>
+                    <div class="main__mood list">
+                        <div class="mood mood__1">
+                            <div class="mood__1 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000022e3ad3f0c0a36bb7f68da809" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="mood__1 content">
+                                <div class="title">
+                                    <span>Ta Nói Nó Dzui</span>
+                                </div>
+                                <div class="content">
+                                    <p>Cười như mọi ngày, cày<br> như mọi người. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mood mood__2">
+                            <div class="mood__2 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000024a89161ab0b4611941ffca60" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="mood__2 content">
+                                <div class="title">
+                                    <span>Phút Cô Đơn Ngày Mưa</span>
+                                </div>
+                                <div class="content">
+                                    <p>Giọt mưa trên cửa kính<br> gợi ký ức về một thời đã xa. Ảnh bìa: Trung Quân</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mood mood__3">
+                            <div class="mood__3 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002902f94a78cfd941a044851a3" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="mood__3 content">
+                                <div class="title">
+                                    <span>Điều Buồn Nhất</span>
+                                </div>
+                                <div class="content">
+                                    <p>Điều buồn nhất là anh<br> biết lại làm như không biết... Ảnh bìa: Thiều Bảo Trâm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mood mood__4">
+                            <div class="mood__4 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000265af49474d91827160b56b27" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="mood__4 content">
+                                <div class="title">
+                                    <span>Alone Again</span>
+                                </div>
+                                <div class="content">
+                                    <p>Being alone (again) can<br> be tough, but these songs will keep you company.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mood mood__5">
+                            <div class="mood__5 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027dc2a0fb4bfe0d07294f685e" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="mood__5 content">
+                                <div class="title">
+                                    <span>Good Vibes</span>
+                                </div>
+                                <div class="content">
+                                    <p>Set it off with these epic<br> anthems. Only good vibes here!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mood mood__6">
+                            <div class="mood__6 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002bd0e19e810bb4b55ab164a95" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="mood__6 content">
+                                <div class="title">
+                                    <span>Mood Booster</span>
+                                </div>
+                                <div class="content">
+                                    <p>Get happy with today's<br> dose of feel-good songs!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Popular new releases -->
+                <section class="main__pop">
+                    <div class="main__pop title">
+                        <div class="name">
+                            <h2><a href="#">Popular new releases</a></h2>
+                        </div>
+                        <div class="more">
+                            <span>SEE ALL</span>
+                        </div>
+                    </div>
+                    <div class="main__pop list">
+                        <div class="pop pop__1">
+                            <div class="pop__1 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000023816d2e3ce02cdbb13376f9f" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="pop__1 content">
+                                <div class="title">
+                                    <span>New Music Friday Vietnam</span>
+                                </div>
+                                <div class="content">
+                                    <p>Những chiếc nhạc mới<br> trong tuần, được tuyển chọn cẩn thận. Ảnh bìa: aespa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop pop__2">
+                            <div class="pop__2 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02706a57ff7ccf5ad325d94d2b" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="pop__2 content">
+                                <div class="title">
+                                    <span>HOLIDAY</span>
+                                </div>
+                                <div class="content">
+                                    <p>WINNER</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop pop__3">
+                            <div class="pop__3 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e028df0d48c84650c99b01a3fd3" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="pop__3 content">
+                                <div class="title">
+                                    <span>There's No One At All (Another Version)</span>
+                                </div>
+                                <div class="content">
+                                    <p>Sơn Tùng M-TP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop pop__4">
+                            <div class="pop__4 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02689b4c9e69a72bd3398f2e88" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="pop__4 content">
+                                <div class="title">
+                                    <span>Sequence</span>
+                                </div>
+                                <div class="content">
+                                    <p>WJSN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop pop__5">
+                            <div class="pop__5 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e022e308994a76a473a4f88c1aa" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="pop__5 content">
+                                <div class="title">
+                                    <span>MANIFESTO : DAY 1</span>
+                                </div>
+                                <div class="content">
+                                    <p>ENHYPEN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop pop__6">
+                            <div class="pop__6 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02cf28c546512553f691385e01" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="pop__6 content">
+                                <div class="title">
+                                    <span>Lost Without You (with Dean Lewis)</span>
+                                </div>
+                                <div class="content">
+                                    <p>Kygo, Dean Lewis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Thời gian cho gia đình và bản thân -->
+                <section class="music__forYou">
+                    <div class="music__forYou title">
+                        <div class="name">
+                            <h2><a href="#">Thời gian cho gia đình và bản thân</a></h2>
+                        </div>
+                        <div class="more">
+                            <span>SEE ALL</span>
+                        </div>
+                    </div>
+                    <div class="music__forYou list">
+                        <div class="forYou music__1">
+                            <div class="music__1 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002d0a821457115512e79c03e92" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__1 content">
+                                <div class="title">
+                                    <span>Mãi Yêu Vũ.</span>
+                                </div>
+                                <div class="content">
+                                    <p>Bài hát mới nhất Bước<br> Qua Nhau và những ca khúc khác của "hoàng tử nhạc indie Việt"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forYou music__2">
+                            <div class="music__2 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000020c791ec9b9932f4f998fefe7" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__2 content">
+                                <div class="title">
+                                    <span>Từ Màn Ảnh</span>
+                                </div>
+                                <div class="content">
+                                    <p>Nhạc phim Em Và Trịnh,<br> Our Blues, Nhật Ký Tự Do Của Tôi... và những bộ phim khác</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forYou music__3">
+                            <div class="music__3 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000029b6d615ddeed9988896a7515" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__3 content">
+                                <div class="title">
+                                    <span>Anh Hào Nhạc Việt</span>
+                                </div>
+                                <div class="content">
+                                    <p>Những nghệ sĩ nam góp<br> phần rạng rỡ cho V-Pop. Ảnh bìa: Lou Hoàng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forYou music__4">
+                            <div class="music__4 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027b61e1a1f39e37860c172bad" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__4 content">
+                                <div class="title">
+                                    <span>lofi thật lâu phai</span>
+                                </div>
+                                <div class="content">
+                                    <p>Những 🎶 mơ màng<br> ✨, lãng đãng 🌸 nhưng cũng thật khó phai 🐰</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forYou music__5">
+                            <div class="music__5 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000288c7ffef42792225574daccb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__5 content">
+                                <div class="title">
+                                    <span>Tiếng Hát Át Tiếng Ka</span>
+                                </div>
+                                <div class="content">
+                                    <p>Hãy để tiếng hát của<br> bạn át tiếng karaoke nhà hàng xóm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forYou music__6">
+                            <div class="music__6 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000025fb192cf8f936e1e8a7abc85" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="music__6 content">
+                                <div class="title">
+                                    <span>Tiệc Tùng</span>
+                                </div>
+                                <div class="content">
+                                    <p>Nở hoa hay bế tắc, luôn<br> sẵn nhạc để lắc lư</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--Soundtrack your home  -->
+                <section class="soundtrack">
+                    <div class="soundtrack title">
+                        <div class="name">
+                            <h2><a href="#">Soundtrack your home</a></h2>
+                        </div>
+                        <div class="more">
+                            <span>SEE ALL</span>
+                        </div>
+                    </div>
+                    <div class="soundtrack list">
+                        <div class="soundtrack track__1">
+                            <div class="track__1 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002296a902bf19a1cf9087f67b5" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="track__1 content">
+                                <div class="title">
+                                    <span>Thoải Mái Gác Chân Lên</span>
+                                </div>
+                                <div class="content">
+                                    <p>Nằm nhà, thoải mái gác<br> chân lên nghỉ ngơi...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soundtrack track__2">
+                            <div class="track__2 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000020c791ec9b9932f4f998fefe7" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="track__2 content">
+                                <div class="title">
+                                    <span>Từ Màn Ảnh</span>
+                                </div>
+                                <div class="content">
+                                    <p>Nhạc phim Em Và Trịnh,<br> Our Blues, Nhật Ký Tự Do Của Tôi... và những bộ phim khác</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soundtrack track__3">
+                            <div class="track__3 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002c5704d2aefd525c003f4586c" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="track__3 content">
+                                <div class="title">
+                                    <span>Dinner with Friends</span>
+                                </div>
+                                <div class="content">
+                                    <p>Dinner with Friends?<br> Here's the perfect playlist.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soundtrack track__4">
+                            <div class="track__4 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000224893f0507c0fe2855565438" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="track__4 content">
+                                <div class="title">
+                                    <span>Songs to Sing in the Shower</span>
+                                </div>
+                                <div class="content">
+                                    <p>Make your shower more<br> uplifting by singing along to these hits.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soundtrack track__5">
+                            <div class="track__5 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002b2bc4ced2384f13fd10667cb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="track__5 content">
+                                <div class="title">
+                                    <span>Êm Đềm</span>
+                                </div>
+                                <div class="content">
+                                    <p>Thư giãn cùng những<br> giai điệu dịu êm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soundtrack track__6">
+                            <div class="track__6 img">
+                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000211454569fd4ff378b24d6beb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                            </div>
+                            <div class="track__6 content">
+                                <div class="title">
+                                    <span>Lofi Chill Để Thư Giãn</span>
+                                </div>
+                                <div class="content">
+                                    <p>Mấy bài này chill phết</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <hr>
+                <div class="footer__signUp">
+                    <div class="preview">
+                        <p class="preview__title">
+                            <small>PREVIEW OF SPOTIFY</small>
+                        </p>
+                        <p class="preview__desc">
+                            Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+                        </p>
+                    </div>
+                    <button class="btn">
+                        <p>Sign up free</p>
+                    </button>
+                </div>
+            </footer>
+        </content>
+    </div>
+</body>
+</html>
