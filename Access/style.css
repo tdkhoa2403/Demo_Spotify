@@ -2,18 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 #wrapper {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 #wrapper .aside__nav {
     width: 241px;
     height: 100vh;
     background-color: #000000;
-    color: #fff;
     padding: 20px 0;
     position: sticky;
     position: -webkit-sticky;
@@ -28,6 +28,8 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 .brand .brand__icon i {
     font-size: 2.5rem;
@@ -41,16 +43,24 @@
 /* Controls */
 .controls {
     padding: 0 24px;
+    font-size: 0.9rem;
 }
 
 /* Default */
 .control__default {
     margin-bottom: 32px;
 }
-.controls .control__default > div {
+.controls .control__default > a {
     display: flex;
     align-items: center;
     margin-bottom: 18px;
+    text-decoration: none;
+    color: #a7a7a7;
+    transition: all 0.5s;
+}
+.controls .control__default > a:hover {
+    color: #fff;
+    transition: all 0.5s;
 }
 .controls .control__default  i {
     font-size: 1.4rem;
@@ -67,10 +77,17 @@
 }
 
 /* List */
-.controls .control__list > div {
+.controls .control__list > a {
     display: flex;
     align-items: center;
     margin-bottom: 18px;
+    text-decoration: none;
+    color: #a7a7a7;
+    transition: all 0.5s;
+}
+.controls .control__list > a:hover {
+    color: #fff;
+    transition: all 0.5s;
 }
 .control__list .create__list  i {
     font-size: 1.8rem;
@@ -107,10 +124,15 @@ content header .header__nav {
     align-items: center;
     background-color: #101010;
     padding-left: 18px;
-
+}
+content header .header__nav a {
+    text-decoration: none;
+    color: #fff;
 }
 .header__nav .nav__arrow {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
 }
 .arrow--left, .arrow--right {
     width: 32px;
@@ -124,6 +146,8 @@ content header .header__nav {
     justify-content: center;
     position: relative;
     margin-left: 12px;
+    font-size: 1.1rem;
+    margin-right: 5px;
 }
 
 .header__nav .nav__tools {
@@ -131,20 +155,29 @@ content header .header__nav {
     display: flex;
     align-items: center;
     padding-left: 55px;
+    font-weight: bold;
 }
 .nav__tools .controls ul {
     display: flex;
     list-style: none;
 }
 .nav__tools .controls ul li {
-    margin-right: 40px;
+    margin-right: 42px;
 }
 .nav__tools .controls ul li:last-child {
     margin-right: 0;
 }
 .nav__tools a {
     text-decoration: none;
+    display: inline-block;
     color: #a7a7a7;
+}
+.nav__tools a.link:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+.nav__tools a.link:active {
+    opacity: 0.7;
 }
 .ruler {
     background: #fff;
@@ -153,7 +186,7 @@ content header .header__nav {
     margin-left: 5px;
     width: 1px;
 }
-.nav__tools .signIn input {
+.nav__tools .signIn-btn input {
     background-color: #fff;
     font-size: 1.1rem;
     color: #000;
@@ -162,8 +195,13 @@ content header .header__nav {
     border-radius: 50px;
     margin-left: 30px;
 }
-
-
+.nav__tools .signIn-btn input:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+.nav__tools .signIn-btn input:active {
+    opacity: 0.7;
+}
 /* Main */
 main {
     padding: 26px 32px 0;
@@ -175,59 +213,62 @@ main .name p {
     font-size: 0.9rem;
     margin-top: 7px;
 }
-
-/* Music */
-main .main__music {
-    margin-bottom: 40px;
-}
-main .main__music .main__music.title {
-    margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main .main__music .main__music.title .name a {
-    font-size: 1.4rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-main .main__music .main__music.title .more span {
+main .more span a {
     font-size: 0.75rem;
     color: #b3b3b3;
     font-weight: bold;
     display: block;
     margin-top: 10px;
     letter-spacing: 1px;
+    text-decoration: none;
 }
-main .main__music .main__music.list {
+main .more span a:hover {
+    text-decoration: underline;
+}
+main .title .name a  {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .title .name a:hover {
+    text-decoration: underline;
+}
+main > section {
+    margin-bottom: 40px;
+}
+main > section > div.title {
+    margin-bottom: 22px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.main__music .main__music.list > div {
+main > section > div.list {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+main > section > div.list > div {
     width: 185px;
     height: 263px;
     background: #1a1919;
     padding: 16px;
     position: relative;
-    margin-right: 25px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
 }
-.main__music.list div:last-child {
-    margin-right: 0;
-}
-
-.music img {
+main > section > div.list > div img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
-.music .title {
+main > section > div.list > div div.title {
     margin: 18px 0 6px;
     font-weight: 550;
     color: #fff;
 }
-.music .content p {
+main > section > div.list > div > div > div.content p {
     font-size: 0.89rem;
     width: 100%;
     height: 50px;
@@ -236,6 +277,42 @@ main .main__music .main__music.list {
     text-overflow: ellipsis;
     color: gray;
 }
+main > section > div.list > div > div button.btn-play {
+    width: 50px;
+    height: 50px;
+    background: #1ed760;
+    border-radius: 50%;
+    position: absolute;
+    left: 110px;
+    top: 120px;
+    border: none;
+    outline: none;
+    opacity: 0;
+    transition: all 0.5s ;
+}
+main > section > div.list > div > div button.btn-play > div.btn {
+    width: 0;
+    height: 0;
+    border-top: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: rotate(267deg);
+    position: absolute;
+    left: 17px;
+    top: 18px;
+}
+main > section > div.list > div:hover {
+    background: #282828;
+    transition: all .5s;
+}
+main > section > div.list > div:hover div button.btn-play {
+    transform: translateY(-10px);
+    opacity: 1.0;
+    transition: all .5s;
+}
+
+/* Music */
+
 .music.music__2 .title, .music.music__5 .title {
     margin: 18px 0 6px;
     font-weight: 550;
@@ -246,9 +323,7 @@ main .main__music .main__music.list {
 }
 
 /* Charts */
-main .main__charts {
-    margin-bottom: 40px       ;
-}
+
 main .main__charts .main__charts.title {
     margin-bottom: 22px;
 }
@@ -257,107 +332,10 @@ main .main__charts .main__charts.title .name h2 {
     color: #fff;
     font-weight: bold;
 }
-main .main__charts .main__charts.list {
-    display: flex;
-    align-items: center;
-}
-.main__charts .main__charts.list > div {
-    width: 185px;
-    height: 263px;
-    background: #1a1919;
-    padding: 16px;
-    position: relative;
-    margin-right: 25px;
-    border-radius: 5px;
-}
-.main__charts.list div:last-child {
-    margin-right: 0;
-}
-
-.charts img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.charts .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
-}
-.charts .content p {
-    font-size: 0.89rem;
-    width: 100%;
-    height: 50px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: gray;
-}
 
 /* Focus */
-main .main__focus {
-    margin-bottom: 40px;
-}
-main .main__focus .main__focus.title {
-    margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main .main__focus .main__focus.title .name a {
-    font-size: 1.4rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-main .main__focus .main__focus.title .more span {
-    font-size: 0.75rem;
-    color: #b3b3b3;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
-main .main__focus .main__focus.list {
-    display: flex;
-    align-items: center;
-}
-.main__focus .main__focus.list > div {
-    width: 185px;
-    height: 263px;
-    background: #1a1919;
-    padding: 16px;
-    position: relative;
-    margin-right: 25px;
-    border-radius: 5px;
-}
-.main__focus.list div:last-child {
-    margin-right: 0;
-}
 
-.focus img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.focus .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
-}
-.focus .content p {
-    font-size: 0.89rem;
-    width: 100%;
-    height: 50px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: gray;
-}
 .focus.focus__2 .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -365,69 +343,8 @@ main .main__focus .main__focus.list {
 
 
 /* Mood */
-main .main__mood {
-    margin-bottom: 40px;
-}
-main .main__mood .main__mood.title {
-    margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main .main__mood .main__mood.title .name a {
-    font-size: 1.4rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-main .main__mood .main__mood.title .more span {
-    font-size: 0.75rem;
-    color: #b3b3b3;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
-main .main__mood .main__mood.list {
-    display: flex;
-    align-items: center;
-}
-.main__mood .main__mood.list > div {
-    width: 185px;
-    height: 263px;
-    background: #1a1919;
-    padding: 16px;
-    position: relative;
-    margin-right: 25px;
-    border-radius: 5px;
-}
-.main__mood.list div:last-child {
-    margin-right: 0;
-}
 
-.mood img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.mood .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
-}
-.mood .content p {
-    font-size: 0.89rem;
-    width: 100%;
-    height: 50px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: gray;
-}
 .mood.mood__2 .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -435,69 +352,8 @@ main .main__mood .main__mood.list {
 
 
 /* Popular new releases */
-main .main__pop {
-    margin-bottom: 40px;
-}
-main .main__pop .main__pop.title {
-    margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main .main__pop .main__pop.title .name a {
-    font-size: 1.4rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-main .main__pop .main__pop.title .more span {
-    font-size: 0.75rem;
-    color: #b3b3b3;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
-main .main__pop .main__pop.list {
-    display: flex;
-    align-items: center;
-}
-.main__pop .main__pop.list > div {
-    width: 185px;
-    height: 263px;
-    background: #1a1919;
-    padding: 16px;
-    position: relative;
-    margin-right: 25px;
-    border-radius: 5px;
-}
-.main__pop.list div:last-child {
-    margin-right: 0;
-}
 
-.pop img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.pop .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
-}
-.pop .content p {
-    font-size: 0.89rem;
-    width: 100%;
-    height: 50px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: gray;
-}
 .pop.pop__1 .title, .pop.pop__3 .title, .pop.pop__5 .title, .pop.pop__6 .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -505,69 +361,8 @@ main .main__pop .main__pop.list {
 
 
 /* Thời gian cho gia đình và bản thân */
-main .music__forYou {
-    margin-bottom: 40px;
-}
-main .music__forYou .music__forYou.title {
-    margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main .music__forYou .music__forYou.title .name a {
-    font-size: 1.4rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-main .music__forYou .music__forYou.title .more span {
-    font-size: 0.75rem;
-    color: #b3b3b3;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
-main .music__forYou .music__forYou.list {
-    display: flex;
-    align-items: center;
-}
-.music__forYou .music__forYou.list > div {
-    width: 185px;
-    height: 263px;
-    background: #1a1919;
-    padding: 16px;
-    position: relative;
-    margin-right: 25px;
-    border-radius: 5px;
-}
-.music__forYou.list div:last-child {
-    margin-right: 0;
-}
 
-.forYou img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.forYou .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
-}
-.forYou .content p {
-    font-size: 0.89rem;
-    width: 100%;
-    height: 50px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: gray;
-}
 .forYou.music__5 .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -575,69 +370,8 @@ main .music__forYou .music__forYou.list {
 
 
 /* Soundtrack your home */
-main .soundtrack {
-    margin-bottom: 40px;
-}
-main .soundtrack .soundtrack.title {
-    margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main .soundtrack .soundtrack.title .name a {
-    font-size: 1.4rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-main .soundtrack .soundtrack.title .more span {
-    font-size: 0.75rem;
-    color: #b3b3b3;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
-main .soundtrack .soundtrack.list {
-    display: flex;
-    align-items: center;
-}
-.soundtrack .soundtrack.list > div {
-    width: 185px;
-    height: 263px;
-    background: #1a1919;
-    padding: 16px;
-    position: relative;
-    margin-right: 25px;
-    border-radius: 5px;
-}
-.soundtrack.list div:last-child {
-    margin-right: 0;
-}
 
-.soundtrack img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.soundtrack .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
-}
-.soundtrack .content p {
-    font-size: 0.89rem;
-    width: 100%;
-    height: 50px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: gray;
-}
 .soundtrack.track__1 .title, .soundtrack.track__4 .title, .soundtrack.track__6 .title {
-    margin: 18px 0 6px;
-    font-weight: 550;
-    color: #fff;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -645,6 +379,11 @@ main .soundtrack .soundtrack.list {
 
 
 /* footer */
+
+footer {
+    width: 100%;
+    height: 68px;
+}
 hr {
     height: 1px;
     margin-bottom: 145px;
@@ -652,7 +391,7 @@ hr {
     background-color: #423e3e;
 }
 .footer__signUp {
-    width: calc(100% - 241px);
+    width: 100%;
     height: auto;
     background: linear-gradient(90deg,#af2896,#509bf5);
     display: flex;
@@ -662,6 +401,15 @@ hr {
     color: #fff;
     position: fixed;
     bottom: 0px;
+    text-decoration: none;
+}
+.preview {
+    margin-left: 22px;
+}
+.preview p:nth-child(1) {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 button.btn {
     position: relative;
@@ -673,4 +421,11 @@ button.btn {
     width: 150px;
     height: 50px;
     font-weight: 550;
+}
+button.btn:hover {
+    transform: scale(1.05);
+    font-weight: 700;
+}
+button.btn:active {
+    opacity: 0.7;
 }

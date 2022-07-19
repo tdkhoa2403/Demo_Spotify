@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="../../../Fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./Access/Assets/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./Access/style.css">
     <title>Spotify</title>
 </head>
@@ -12,38 +13,38 @@
     <div id="wrapper">
         <!-- Aside -->
         <aside class="aside__nav">
-            <div class="brand">
+            <a href="../Demo_spotify/index.html" class="brand">
                 <div class="brand__icon">
                     <i class="fa-brands fa-spotify"></i>
                 </div>
                 <div class="brand__name">
                     <p>Spotify</p>
                 </div>
-            </div>
+            </a>
 
             <!-- Controls -->
             <div class="controls">
                 <div class="control__default">
                     <!-- Home -->
-                    <div class="home">
+                    <a href="../Demo_spotify/index.html" class="home">
                         <div class="home__icon">
                             <i class="fa-solid fa-house"></i>
                         </div>
                         <div class="home__name">
                             <p>Home</p>
                         </div>
-                    </div>
+                    </a>
                     <!-- Search -->
-                    <div class="search">
+                    <a href="#" class="search">
                         <div class="search__icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="search__name">
                             <p>Search</p>
                         </div>
-                    </div>
+                    </a>
                     <!-- Library -->
-                    <div class="library">
+                    <a href="../Demo_spotify/Access/Library/Playlists/index.html" class="library">
                         <div class="library__icon">
                             <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 EQkJl collection-icon" viewBox="0 0 24 24">
                                 <path d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path>
@@ -52,19 +53,19 @@
                         <div class="library__name">
                             <p>Your Library</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!-- Controls list -->
                 <div class="control__list">
-                    <div class="create__list">
+                    <a href="#" class="create__list">
                         <div class="icon">
                             <i class="fa-solid fa-square-plus"></i>
                         </div>
                         <div class="name">
                             <p>Create Playlist</p>
                         </div>
-                    </div>
-                    <div class="liked__songs">
+                    </a>
+                    <a href="#" class="liked__songs">
                         <div class="icon">
                             <div class="box__heart" style="width: 25px; height: 25px; background: linear-gradient(120deg, blue, aqua);">
                                 <i class="fa-solid fa-heart"></i>
@@ -73,7 +74,7 @@
                         <div class="name">
                             <p>Liked Songs</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </aside>
@@ -82,24 +83,26 @@
                 <nav class="header__nav">
                     <div class="nav__arrow">
                         <div class="arrow--left">
-                            <i class="fa-solid fa-arrow-left"></i>
+                            <a href="#"><i class="ti-angle-left"></i></a>
                         </div>
                         <div class="arrow--right">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="#"><i class="ti-angle-right"></i></a>
                         </div>
                     </div>
                     <div class="nav__tools">
                         <div class="controls">
                             <ul>
-                                <li><a href="#">Premium</a></li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Download</a></li>
+                                <li><a href="#" class="link">Premium</a></li>
+                                <li><a href="#" class="link">Support</a></li>
+                                <li><a href="#" class="link">Download</a></li>
                             </ul>
                         </div>
                         <div class="ruler"></div>
                         <div class="signIn">
-                            <a href="#">Sign up</a>
-                            <input type="button" value="Log in">
+                            <a href="#" class="link">Sign up</a>
+                            <a href="./Access/Spotify_login/login_form.html" class="signIn-btn">
+                                <input type="button" value="Log in">
+                            </a>
                         </div>
                     </div>
                 </nav>
@@ -113,13 +116,16 @@
                             <h2><a href="#">Lựa chọn của Spotify</a></h2>
                         </div>
                         <div class="more">
-                            <span>SEE ALL</span>
+                            <span><a href="#">SEE ALL</a></span>
                         </div>
                     </div>
                     <div class="main__music list">
                         <div class="music music__1">
                             <div class="music__1 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000022efa2fb74afc959e922b4ea3" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__1 content">
                                 <div class="title">
@@ -133,6 +139,9 @@
                         <div class="music music__2">
                             <div class="music__2 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000028726331249fba2c14ff6cfd4" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__2 content">
                                 <div class="title">
@@ -146,6 +155,9 @@
                         <div class="music music__3">
                             <div class="music__3 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002abf162e2c5f16b35e6fe6dc1" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__3 content">
                                 <div class="title">
@@ -159,6 +171,9 @@
                         <div class="music music__4">
                             <div class="music__4 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000026c79f1aeaaa2089db3776e9d" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__4 content">
                                 <div class="title">
@@ -172,6 +187,9 @@
                         <div class="music music__5">
                             <div class="music__5 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000211454569fd4ff378b24d6beb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__5 content">
                                 <div class="title">
@@ -185,6 +203,9 @@
                         <div class="music music__6">
                             <div class="music__6 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002179209abe53816a03a9be111" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__6 content">
                                 <div class="title">
@@ -209,6 +230,9 @@
                         <div class="charts chart__1">
                             <div class="chart__1 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_vn_default.jpg" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="chart__1 content">
                                 <div class="title">
@@ -222,6 +246,9 @@
                         <div class="charts chart__2">
                             <div class="chart__2 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="chart__2 content">
                                 <div class="title">
@@ -235,6 +262,9 @@
                         <div class="charts chart__3">
                             <div class="chart__3 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002c61f44e81529d986f2b3526d" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="chart__3 content">
                                 <div class="title">
@@ -256,13 +286,16 @@
                             <p>Music to help you concentrate.</p>
                         </div>
                         <div class="more">
-                            <span>SEE ALL</span>
+                            <span><a href="#">SEE ALL</a></span>
                         </div>
                     </div>
                     <div class="main__focus list">
                         <div class="focus focus__1">
                             <div class="focus__1 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="focus__1 content">
                                 <div class="title">
@@ -276,6 +309,9 @@
                         <div class="focus focus__2">
                             <div class="focus__2 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000023466e2ac76e504f4131af598" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="focus__2 content">
                                 <div class="title">
@@ -289,6 +325,9 @@
                         <div class="focus focus__3">
                             <div class="focus__3 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000218e20d8d2bc7aa007d305e57" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="focus__3 content">
                                 <div class="title">
@@ -302,6 +341,9 @@
                         <div class="focus focus__4">
                             <div class="focus__4 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000024a46a7f4e55bbc386dc77f84" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="focus__4 content">
                                 <div class="title">
@@ -315,6 +357,9 @@
                         <div class="focus focus__5">
                             <div class="focus__5 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002abaf6c3c6a4b29f8a4565a86" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="focus__5 content">
                                 <div class="title">
@@ -328,6 +373,9 @@
                         <div class="focus focus__6">
                             <div class="focus__6 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002dfd8b99086f2c703cc76a1f1" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="focus__6 content">
                                 <div class="title">
@@ -350,13 +398,16 @@
                             <p>Playlists to match your mood.</p>
                         </div>
                         <div class="more">
-                            <span>SEE ALL</span>
+                            <span><a href="#">SEE ALL</a></span>
                         </div>
                     </div>
                     <div class="main__mood list">
                         <div class="mood mood__1">
                             <div class="mood__1 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000022e3ad3f0c0a36bb7f68da809" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="mood__1 content">
                                 <div class="title">
@@ -370,6 +421,9 @@
                         <div class="mood mood__2">
                             <div class="mood__2 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000024a89161ab0b4611941ffca60" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="mood__2 content">
                                 <div class="title">
@@ -383,6 +437,9 @@
                         <div class="mood mood__3">
                             <div class="mood__3 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002902f94a78cfd941a044851a3" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="mood__3 content">
                                 <div class="title">
@@ -396,6 +453,9 @@
                         <div class="mood mood__4">
                             <div class="mood__4 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000265af49474d91827160b56b27" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="mood__4 content">
                                 <div class="title">
@@ -409,6 +469,9 @@
                         <div class="mood mood__5">
                             <div class="mood__5 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027dc2a0fb4bfe0d07294f685e" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="mood__5 content">
                                 <div class="title">
@@ -422,6 +485,9 @@
                         <div class="mood mood__6">
                             <div class="mood__6 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002bd0e19e810bb4b55ab164a95" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="mood__6 content">
                                 <div class="title">
@@ -443,13 +509,16 @@
                             <h2><a href="#">Popular new releases</a></h2>
                         </div>
                         <div class="more">
-                            <span>SEE ALL</span>
+                            <span><a href="#">SEE ALL</a></span>
                         </div>
                     </div>
                     <div class="main__pop list">
                         <div class="pop pop__1">
                             <div class="pop__1 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000023816d2e3ce02cdbb13376f9f" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="pop__1 content">
                                 <div class="title">
@@ -463,6 +532,9 @@
                         <div class="pop pop__2">
                             <div class="pop__2 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02706a57ff7ccf5ad325d94d2b" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="pop__2 content">
                                 <div class="title">
@@ -476,6 +548,9 @@
                         <div class="pop pop__3">
                             <div class="pop__3 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e028df0d48c84650c99b01a3fd3" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="pop__3 content">
                                 <div class="title">
@@ -489,6 +564,9 @@
                         <div class="pop pop__4">
                             <div class="pop__4 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02689b4c9e69a72bd3398f2e88" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="pop__4 content">
                                 <div class="title">
@@ -502,6 +580,9 @@
                         <div class="pop pop__5">
                             <div class="pop__5 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e022e308994a76a473a4f88c1aa" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="pop__5 content">
                                 <div class="title">
@@ -515,6 +596,9 @@
                         <div class="pop pop__6">
                             <div class="pop__6 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e02cf28c546512553f691385e01" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="pop__6 content">
                                 <div class="title">
@@ -536,13 +620,16 @@
                             <h2><a href="#">Thời gian cho gia đình và bản thân</a></h2>
                         </div>
                         <div class="more">
-                            <span>SEE ALL</span>
+                            <span><a href="#">SEE ALL</a></span>
                         </div>
                     </div>
                     <div class="music__forYou list">
                         <div class="forYou music__1">
                             <div class="music__1 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002d0a821457115512e79c03e92" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__1 content">
                                 <div class="title">
@@ -556,6 +643,9 @@
                         <div class="forYou music__2">
                             <div class="music__2 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000020c791ec9b9932f4f998fefe7" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__2 content">
                                 <div class="title">
@@ -569,6 +659,9 @@
                         <div class="forYou music__3">
                             <div class="music__3 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000029b6d615ddeed9988896a7515" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__3 content">
                                 <div class="title">
@@ -582,6 +675,9 @@
                         <div class="forYou music__4">
                             <div class="music__4 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027b61e1a1f39e37860c172bad" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__4 content">
                                 <div class="title">
@@ -595,6 +691,9 @@
                         <div class="forYou music__5">
                             <div class="music__5 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000288c7ffef42792225574daccb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__5 content">
                                 <div class="title">
@@ -608,6 +707,9 @@
                         <div class="forYou music__6">
                             <div class="music__6 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000025fb192cf8f936e1e8a7abc85" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="music__6 content">
                                 <div class="title">
@@ -629,13 +731,16 @@
                             <h2><a href="#">Soundtrack your home</a></h2>
                         </div>
                         <div class="more">
-                            <span>SEE ALL</span>
+                            <span><a href="#">SEE ALL</a></span>
                         </div>
                     </div>
                     <div class="soundtrack list">
                         <div class="soundtrack track__1">
                             <div class="track__1 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002296a902bf19a1cf9087f67b5" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="track__1 content">
                                 <div class="title">
@@ -649,6 +754,9 @@
                         <div class="soundtrack track__2">
                             <div class="track__2 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000020c791ec9b9932f4f998fefe7" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="track__2 content">
                                 <div class="title">
@@ -662,6 +770,9 @@
                         <div class="soundtrack track__3">
                             <div class="track__3 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002c5704d2aefd525c003f4586c" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="track__3 content">
                                 <div class="title">
@@ -675,6 +786,9 @@
                         <div class="soundtrack track__4">
                             <div class="track__4 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000224893f0507c0fe2855565438" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="track__4 content">
                                 <div class="title">
@@ -688,6 +802,9 @@
                         <div class="soundtrack track__5">
                             <div class="track__5 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002b2bc4ced2384f13fd10667cb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="track__5 content">
                                 <div class="title">
@@ -701,6 +818,9 @@
                         <div class="soundtrack track__6">
                             <div class="track__6 img">
                                 <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f0000000211454569fd4ff378b24d6beb" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt">
+                                <button class="btn-play">
+                                    <div class="btn"></div>
+                                </button>
                             </div>
                             <div class="track__6 content">
                                 <div class="title">
@@ -714,23 +834,23 @@
                     </div>
                 </section>
             </main>
-            <footer>
-                <hr>
-                <div class="footer__signUp">
-                    <div class="preview">
-                        <p class="preview__title">
-                            <small>PREVIEW OF SPOTIFY</small>
-                        </p>
-                        <p class="preview__desc">
-                            Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
-                        </p>
-                    </div>
-                    <button class="btn">
-                        <p>Sign up free</p>
-                    </button>
-                </div>
-            </footer>
         </content>
+        <footer>
+            <hr>
+            <a href="#" class="footer__signUp">
+                <div class="preview">
+                    <p class="preview__title">
+                        <small>PREVIEW OF SPOTIFY</small>
+                    </p>
+                    <p class="preview__desc">
+                        Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+                    </p>
+                </div>
+                <button class="btn">
+                    <p>Sign up free</p>
+                </button>
+            </a>
+        </footer>
     </div>
 </body>
 </html>
